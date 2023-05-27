@@ -1,73 +1,64 @@
 # Autonomous Parking Using A* Search
 
-## Demo
-
-![akerman](https://github.com/gprajwalpoojari/Motion_Planning_for_Autonomous_Parking/assets/53962958/3605d74f-5ce1-4b79-90fb-0fdbd435d122)
-
-
-## The Parking Problem
+## Problem Statement
 A common path planning problem for autonomous vehicles involves maneuvering in tight spaces and cluttered environments, particularly while parking. To address these issues, non-holonomic constraints of the vehicles must be taken into consideration. At the same time, collision checking algorithm must also be deployed to make sure the vehicle path is collision-free. Considering the above constraints, this project implements path planning for the following types of vehicles:
-* A DiWheel Robot
-* A car with Akerman Steering
-* A car pulling Trailer
+* An autonomous delivery robot with DiWheel Kinematics
+* An autonomous car with Akerman Steering
+* An autonomous truck pulling a trailer
 
 ## About the environment
 The project is implemented using the pygame library of python. The environment for the same is a parking lot in a two dimensional grid world. In each instance, a car starts at the Northwest corner of the bounded two dimensional field. The car is to be parked in a compact space in the southern border, flanked by vehicles both in front of and behind the target space. Additionally, there is an island in the central region. The environment approximately looks like the following:
-![](Readme_files/Environment.png)
 
-## DiWheel Kinematics
-  A Diwheel robot is a robot having two parallel wheel side by side. Robots having diwheel kinematics have the capability of taking spot turns, unlike autonomous cars. A figure showing diwheel kinematics is displayed below:
-![](Readme_files/Diwheel.png)
-
-Here is an example of the simulation for diwheel kinematics:
-```
-python main.py
-```
-
-https://user-images.githubusercontent.com/53962958/143936200-ef45402e-b3e2-4845-86d1-c1ec8888e690.mp4
-
-Here is the graph plot of the final path for the diwheel kinematics:
-
-![DiWheet_Path_Depection](https://user-images.githubusercontent.com/53962958/143936224-64f1acbc-0d66-4b89-b88f-d4c5f5865168.png)
+![Environment](https://github.com/kt-krutarthtrivedi/Autonomous-Parking-Using-A-Star/assets/134632027/27047065-5cca-4541-8e96-4c971ec65584)
 
 
-## Akerman Steering
+## An autonomous delivery robot with DiWheel Kinematics
+  This delivery robot is a robot having two parallel wheel side by side. Robots having diwheel kinematics have the capability of taking spot turns, unlike autonomous cars. A figure showing diwheel kinematics is displayed below:
+
+![Diwheel](https://github.com/kt-krutarthtrivedi/Autonomous-Parking-Using-A-Star/assets/134632027/ab6b4a5f-c055-4256-a27e-6d66a217c20e)
+
+
+Here is an example of the simulation for an autonomous delivery robot with Diwheel kinematics:
+
+
+
+https://github.com/kt-krutarthtrivedi/Autonomous-Parking-Using-A-Star/assets/134632027/f9a3052e-ad2e-43ed-8f22-8813c29e36f2
+
+
+
+## An autonomous car with Akerman Steering
 
 Akerman Steering mechanism is used to some extent in today's cars. The following figure depicts akerman steering:
-![](Readme_files/Akerman.png)
 
-Here is an example of the simulation for Akerman steering:
-```
-python main.py
-```
+![Akerman](https://github.com/kt-krutarthtrivedi/Autonomous-Parking-Using-A-Star/assets/134632027/c2131664-e67a-4b98-853d-da6ff63a0a35)
+
+
+Here is an example of the simulation for an autonomous car with Akerman steering:
 
 https://user-images.githubusercontent.com/53962958/143936309-f0bab79c-d6de-453b-85d6-061fe1ccf806.mp4
 
-Here is the graph plot of final path for Akerman Steering
-
-![Akerman_Path_depiction](https://user-images.githubusercontent.com/53962958/143936254-3d83e480-5936-4562-b792-ca077501dfee.png)
-
-## A Car pulling Trailer
-
-A Car pulling trailer has a car that works on Akerman steering. This car has a trailer attached at the back of the car. The following figure depicts a car pulling trailer:
-![](Readme_files/Trailer.png)
 
 
-Here is an example of the simulation for car pulling trailer:
-```
-python main.py
-```
-https://user-images.githubusercontent.com/53962958/143936321-e9bff339-687a-46f1-929c-8718e4d58e88.mp4
+## An autonomous truck pulling a trailer
 
-As seen in the video, the car pulling trailer does not park itself perfectly. The code has bugs which needs to be fixed. 
-Here is the graph plot of the path for the above simulation:
+This truck has a trailer attached at the back of the iy. The following figure depicts an autonomous truck pulling a trailer:
 
-![Car_pulling_trailer_path_depection](https://user-images.githubusercontent.com/53962958/143936290-ce84a9c4-378b-4db5-a5bb-5a0abd35141e.png)
+![Trailer](https://github.com/kt-krutarthtrivedi/Autonomous-Parking-Using-A-Star/assets/134632027/b36e4689-20e7-47b3-964b-92a2f5347c02)
 
 
-The graphs for the above simulations are not as smooth as they should be because of the fact that the entire world is a 2 dimensional grid world. This results in round off errors.
+
+Here is an example of the simulation for an autonomous truck pulling a trailer:
+
+
+
+https://github.com/kt-krutarthtrivedi/Autonomous-Parking-Using-A-Star/assets/134632027/42159d81-1204-48fc-b2c0-317797cde3d0
+
+
+## Report
+
+
+
 
 ## References
-* Steven M. LaValle. Planning Algorithms. Cambridge University Press, May 2006. ISBN 9780521862059. URL http://lavalle.pl/planning/.
-* https://canvas.wpi.edu
+* [Steven M. LaValle. Planning Algorithms. Cambridge University Press, May 2006. ISBN 9780521862059.](http://lavalle.pl/planning/)
 
