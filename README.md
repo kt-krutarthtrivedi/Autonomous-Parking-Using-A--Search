@@ -56,7 +56,7 @@ https://github.com/kt-krutarthtrivedi/Autonomous-Parking-Using-A-Star/assets/134
 
 ## Report
 
-Please find the more detail on path depiction and algorithm's performance in the report below:
+Please find the more detail on path depiction and algorithm's performance in the [report.](https://github.com/kt-krutarthtrivedi/Autonomous-Parking-Using-A-Star/blob/main/media/Report.pdf)
 
 
 
