@@ -35,7 +35,9 @@ Akerman Steering mechanism is used to some extent in today's cars. The following
 
 Here is an example of the simulation for an autonomous car with Akerman steering:
 
-https://user-images.githubusercontent.com/53962958/143936309-f0bab79c-d6de-453b-85d6-061fe1ccf806.mp4
+
+
+https://github.com/kt-krutarthtrivedi/Autonomous-Parking-Using-A-Star/assets/134632027/49e994f4-b022-49b7-a868-734243d7c613
 
 
 
